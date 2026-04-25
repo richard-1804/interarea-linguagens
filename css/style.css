@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* não alterar */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #1e1e2f, #3a3a5a);
+  font-family: "Permanent Marker", cursive;
+}
+
+/* não alterar */
+.book {
+  position: relative;
+  width: 420px;
+  height: 620px;
+  perspective: 2000px;
+  transition: transform 0.8s;
+}
+
+/* não alterar */
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;  
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+/* não alterar */
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.front h1, .back h1 {
+  font-size: 30px;
+}
+
+/* não alterar */
+.front {
+  z-index: 2;
+}
+
+/* não alterar */
+.back {
+  transform: rotateY(180deg);
+}
+
+/* parte de richard */
+.capa-inicio {
+  background-image: url("../img-fundo/capa-inicio.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de richard */
+.prefacio {
+  background-image: url("../img-fundo/prefacio.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de gabi */
+.sumario {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de gabi */
+.apresentacao {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de gabi */
+.racismo-estrutural {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de gabi */
+.racismo-escola {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de faila */
+.letramento {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de faila */
+.discurso-poder {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de faila */
+.glossario {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de faila */
+.representatividade {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de Eloah */
+.cultura-negra {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de Eloah */
+.literatura {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de Eloah */
+.musica {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de Eloah */
+.outras-artes {
+background: #e67e22;
+  /* background-image: url(../img/sumario.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de richard */
+.conclusao {
+  background-image: url("../img-fundo/conclusao.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de richard */
+.colaboradores {
+  background-image: url("../img-fundo/colaboradores.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de richard */
+.vazio {
+  background-image: url("../img-fundo/sumario.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* parte de richard */
+.capa-final {
+  background-image: url("../img-fundo/capa-final.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* não alterar */
+.flipped {
+  transform: rotateY(-180deg);
+}
+
+/* não alterar */
+.buttons {
+  position: absolute;
+  bottom: 30px;
+}
+
+/* não alterar */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
