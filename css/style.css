@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  --fonte-paragrafos: "Montserrat", sans-serif;
+  --fonte-titulos: 'Permanent Marker', cursive;
+  --cor-titulo-capa: #3b1d0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* não alterar */
 body {
@@ -8,7 +22,6 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(120deg, #1e1e2f, #3a3a5a);
-  font-family: "Permanent Marker", cursive;
 }
 
 /* não alterar */
@@ -35,7 +48,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 20px;
   box-sizing: border-box;
   backface-visibility: hidden;
   border-radius: 8px;
@@ -61,6 +73,38 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.title-1-capa-inicio {
+  display: flex;
+  justify-content: center;
+  color: var(--cor-titulo-capa);
+  font-family: var(--fonte-paragrafos);
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+}
+
+.title-2-capa-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--fonte-titulos);
+  color: var(--cor-titulo-capa);
+  margin: 0 20px;
+  
+}
+
+.title-2-capa-inicio h2 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.title-2-capa-inicio h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 /* parte de richard */
