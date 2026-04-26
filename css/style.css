@@ -107,41 +107,491 @@ background: #e67e22;
   background-repeat: no-repeat;
 }
 
-/* parte de faila */
+/* parte de failla */
+
+/* ---- LETRAMENTO RACIAL ---- */
 .letramento {
-background: #e67e22;
-  /* background-image: url(../img/sumario.jpg); */
+  background-image: url("../img-fundo/letramento.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
-/* parte de faila */
+/* Coluna esquerda: x=8, largura=188px, começa após borda topo (~29px) */
+.let-col-esq {
+  position: absolute;
+  left: 8px;
+  top: 29px;
+  width: 186px;
+  bottom: 49px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Box escuro 1-Entenda: ocupa ~73% da coluna esquerda */
+.let-box-escuro {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 8px 9px;
+  border-radius: 3px;
+  flex: 3.1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.let-num-tag {
+  font-size: 8px;
+  color: #aaa;
+  line-height: 1.3;
+}
+
+.let-label-tag {
+  font-size: 8.5px;
+  font-weight: bold;
+  color: #e67e22;
+  border-bottom: 1.5px solid #e67e22;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.let-box-escuro p {
+  margin: 0;
+  font-size: 6.8px;
+  line-height: 1.55;
+  text-align: justify;
+  flex: 1;
+}
+
+/* Box VEJA: ocupa ~27% da coluna esquerda */
+.let-box-veja {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 8px 9px;
+  border-radius: 3px;
+  border: 1.8px dashed #e67e22;
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+}
+
+.let-veja-titulo {
+  font-size: 9px;
+  font-weight: bold;
+  color: #e67e22;
+  text-decoration: underline;
+  margin-bottom: 4px;
+}
+
+.let-box-veja p {
+  margin: 0;
+  font-size: 6.8px;
+  line-height: 1.5;
+  text-align: justify;
+  flex: 1;
+}
+
+/* Coluna direita: x=197, largura=213px */
+.let-col-dir {
+  position: absolute;
+  left: 197px;
+  top: 29px;
+  width: 213px;
+  bottom: 49px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título LETRAMENTO: y=45 no espaço do livro */
+.let-titulo1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 21px;
+  color: #1c1c1c;
+  line-height: 1.0;
+  margin-top: 12px;
+}
+
+/* Título RACIAL: laranja */
+.let-titulo2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 21px;
+  color: #e67e22;
+  line-height: 1.0;
+}
+
+/* ABORDAGEM espaçado */
+.let-abordagem {
+  font-size: 7px;
+  letter-spacing: 3.5px;
+  color: #333;
+  font-weight: bold;
+  margin: 4px 0 8px;
+}
+
+/* Box laranja (2-Reconhecimento) */
+.let-box-laranja {
+  background: #e67e22;
+  color: #1c1c1c;
+  padding: 7px 8px;
+  border-radius: 3px;
+  flex: 1.05;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Box verde (3-Permite) */
+.let-box-verde {
+  background: #4a7c1f;
+  color: #fff;
+  padding: 7px 8px;
+  border-radius: 3px;
+  flex: 1;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.let-box-num {
+  font-size: 8px;
+  color: rgba(0,0,0,0.35);
+  line-height: 1.2;
+}
+.let-box-verde .let-box-num { color: rgba(255,255,255,0.35); }
+
+.let-box-rotulo {
+  font-size: 8px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+.let-box-verde .let-box-rotulo { border-bottom: 1px solid rgba(255,255,255,0.25); }
+
+.let-box-laranja ul,
+.let-box-verde ul {
+  margin: 0;
+  padding-left: 13px;
+  font-size: 6.8px;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.let-box-laranja li,
+.let-box-verde li { margin-bottom: 1px; }
+
+
+/* ---- DISCURSO E PODER ---- */
 .discurso-poder {
-background: #e67e22;
-  /* background-image: url(../img/sumario.jpg); */
+  background-image: url("../img-fundo/discurso-poder.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
-/* parte de faila */
+/* Título linha 1: y=37 */
+.dp-titulo1 {
+  position: absolute;
+  top: 37px;
+  left: 16px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 28px;
+  color: #4a1010;
+  line-height: 1.0;
+}
+
+/* Título linha 2: y=82 */
+.dp-titulo2 {
+  position: absolute;
+  top: 82px;
+  left: 16px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 28px;
+  color: #e67e22;
+  line-height: 1.0;
+}
+
+/* Parágrafo 1: y=144 */
+.dp-par1 {
+  position: absolute;
+  top: 144px;
+  left: 16px;
+  right: 16px;
+  font-size: 8px;
+  color: #222;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Parágrafo 2: y=209 */
+.dp-par2 {
+  position: absolute;
+  top: 209px;
+  left: 16px;
+  right: 16px;
+  font-size: 8px;
+  color: #222;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Caixa central: y=267, h=82 */
+.dp-caixa {
+  position: absolute;
+  top: 267px;
+  left: 16px;
+  right: 16px;
+  height: 82px;
+  background: #4a1010;
+  color: #fff;
+  border-radius: 35px;
+  border: 3px solid #c8851a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.dp-caixa-titulo {
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.dp-caixa-texto {
+  font-size: 9.5px;
+  line-height: 1.4;
+}
+
+.dp-ou {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+/* Colunas: y=366, até y=460 (antes da borda bot de 94px) */
+.dp-colunas {
+  position: absolute;
+  top: 366px;
+  left: 16px;
+  right: 16px;
+  bottom: 94px;
+  display: flex;
+  gap: 12px;
+}
+
+.dp-col-esq,
+.dp-col-dir {
+  flex: 1;
+  font-size: 7.5px;
+}
+
+.dp-col-titulo {
+  font-family: "Permanent Marker", cursive;
+  font-size: 11px;
+  color: #e67e22;
+  margin-bottom: 6px;
+}
+
+.dp-col-esq ul,
+.dp-col-dir ul {
+  padding-left: 13px;
+  margin: 0;
+  line-height: 1.75;
+}
+
+.dp-col-esq li,
+.dp-col-dir li { color: #222; margin-bottom: 1px; }
+
+
+/* ---- GLOSSÁRIO ---- */
 .glossario {
-background: #e67e22;
-  /* background-image: url(../img/sumario.jpg); */
+  background-image: url("../img-fundo/glossario.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
-/* parte de faila */
+/* Título: y=37 */
+.glos-titulo {
+  position: absolute;
+  top: 37px;
+  left: 16px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 26px;
+  color: #4a1010;
+}
+
+/* Grid: top=82, bottom=25 (borda inferior) */
+.glos-grid {
+  position: absolute;
+  top: 82px;
+  left: 14px;
+  right: 14px;
+  bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px 16px;
+  align-content: start;
+}
+
+.glos-item {
+  font-size: 6.8px;
+  line-height: 1.45;
+}
+
+.glos-item-full {
+  grid-column: 1;
+}
+
+.glos-termo {
+  font-size: 7.5px;
+  font-weight: bold;
+  color: #e07b10;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.glos-item p {
+  margin: 0;
+  text-align: justify;
+  color: #1a1a1a;
+}
+
+
+/* ---- REPRESENTATIVIDADE ---- */
 .representatividade {
-background: #e67e22;
-  /* background-image: url(../img/sumario.jpg); */
+  background-image: url("../img-fundo/representatividade.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
+
+/* Topo: h=242px */
+.rep-topo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 242px;
+  display: flex;
+}
+
+/* Texto escuro esquerda: w=226px */
+.rep-topo-texto {
+  width: 226px;
+  background: #181818;
+  color: #fff;
+  padding: 14px 12px;
+  font-size: 7px;
+  line-height: 1.6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.rep-topo-texto p { margin: 0; text-align: justify; }
+
+/* Imagem geométrica direita */
+.rep-topo-geo {
+  flex: 1;
+  background-image: url("../img-fundo/representatividade.png");
+  background-size: cover;
+  background-position: top right;
+}
+
+/* Faixa vermelha: top=242, h=90 */
+.rep-faixa {
+  position: absolute;
+  top: 242px;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: #5a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rep-faixa-titulo {
+  font-family: "Permanent Marker", cursive;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.rep-faixa-sub {
+  font-family: "Permanent Marker", cursive;
+  font-size: 16px;
+  color: #e67e22;
+  line-height: 1.1;
+}
+
+/* Base: top=332, até bottom=0 */
+.rep-base {
+  position: absolute;
+  top: 332px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.rep-base-laranja {
+  background: #d4780a;
+  color: #1a1a1a;
+  padding: 9px 11px;
+  font-size: 6.8px;
+  width: 50%;
+  box-sizing: border-box;
+  line-height: 1.55;
+  overflow: hidden;
+}
+
+.rep-base-creme {
+  background: #fdf5e0;
+  color: #1a1a1a;
+  padding: 9px 11px;
+  font-size: 6.8px;
+  width: 50%;
+  box-sizing: border-box;
+  line-height: 1.55;
+  overflow: hidden;
+}
+
+.rep-base-laranja p,
+.rep-base-creme p { margin: 0 0 5px; text-align: justify; }
+
+.rep-base-laranja ul,
+.rep-base-creme ul { padding-left: 13px; margin: 0; line-height: 1.75; }
+
+.rep-base-laranja li,
+.rep-base-creme li { margin-bottom: 2px; }
 
 /* parte de Eloah */
 .cultura-negra {
