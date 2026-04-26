@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: linear-gradient(120deg, #1e1e2f, #3a3a5a);
 }
 
@@ -34,6 +35,7 @@ body {
   height: 620px;
   perspective: 2000px;
   transition: transform 0.8s;
+  margin: 100px;
 }
 
 /* não alterar */
@@ -1306,12 +1308,6 @@ background-size: cover;
 /* não alterar */
 .flipped {
   transform: rotateY(-180deg);
-}
-
-/* não alterar */
-.buttons {
-  position: absolute;
-  bottom: 30px;
 }
 
 /* não alterar */
