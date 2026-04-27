@@ -430,8 +430,8 @@ body {
 /* fim de ajuste de título e texto de formas explícitas */
 /* fim da parte de gabi */
 
-/* Parte de faila */
-/* Letramento */
+/* ===== LETRAMENTO AJUSTADO ===== */
+
 .letramento {
   background-image: url("../img-fundo/letramento.png");
   background-size: cover;
@@ -439,170 +439,148 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Coluna esquerda: x=8, largura=188px, começa após borda topo (~29px) */
 .let-col-esq {
   position: absolute;
-  left: 8px;
-  top: 29px;
-  width: 186px;
-  bottom: 49px;
+  left: 10px;
+  top: 30px;
+  width: 185px;
+  bottom: 50px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
 }
 
-/* Box escuro 1-Entenda: ocupa ~73% da coluna esquerda */
+/* BOX PRETO (ENTENDA) */
 .let-box-escuro {
   background: #1c1c1c;
   color: #fff;
-  padding: 8px 9px;
-  border-radius: 3px;
-  flex: 3.1;
+  padding: 12px;
+  border-radius: 6px;
+  flex: 3;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .let-num-tag {
-  font-size: 8px;
+  font-size: 12px;
   color: #aaa;
-  line-height: 1.3;
 }
 
 .let-label-tag {
-  font-size: 8.5px;
+  font-size: 14px;
   font-weight: bold;
   color: #e67e22;
-  border-bottom: 1.5px solid #e67e22;
-  padding-bottom: 3px;
-  margin-bottom: 5px;
+  border-bottom: 2px solid #e67e22;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .let-box-escuro p {
-  margin: 0;
-  font-size: 6.8px;
-  line-height: 1.55;
+  font-size: 11px;
+  line-height: 1.6;
   text-align: justify;
-  flex: 1;
 }
 
-/* Box VEJA: ocupa ~27% da coluna esquerda */
+/* BOX VEJA */
 .let-box-veja {
-  background: #1c1c1c;
+  background: #5a0a0a;
   color: #fff;
-  padding: 8px 9px;
-  border-radius: 3px;
-  border: 1.8px dashed #e67e22;
-  flex: 1.1;
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #e67e22;
+  box-shadow: 4px 4px #e67e22;
 }
 
 .let-veja-titulo {
-  font-size: 9px;
+  font-size: 14px;
   font-weight: bold;
-  color: #e67e22;
-  text-decoration: underline;
-  margin-bottom: 4px;
+  color: #f39419;
+  margin-bottom: 5px;
 }
 
 .let-box-veja p {
-  margin: 0;
-  font-size: 6.8px;
+  font-size: 11px;
   line-height: 1.5;
-  text-align: justify;
-  flex: 1;
 }
 
-/* Coluna direita: x=197, largura=213px */
+/* COLUNA DIREITA */
 .let-col-dir {
   position: absolute;
-  left: 197px;
-  top: 29px;
-  width: 213px;
-  bottom: 49px;
+  left: 200px;
+  top: 30px;
+  width: 210px;
+  bottom: 50px;
   display: flex;
   flex-direction: column;
 }
 
-/* Título LETRAMENTO: y=45 no espaço do livro */
+/* TÍTULOS */
 .let-titulo1 {
-  font-family: "Permanent Marker", cursive;
-  font-size: 21px;
-  color: #1c1c1c;
-  line-height: 1.0;
-  margin-top: 12px;
-}
-
-/* Título RACIAL: laranja */
-.let-titulo2 {
-  font-family: "Permanent Marker", cursive;
-  font-size: 21px;
-  color: #e67e22;
-  line-height: 1.0;
-}
-
-/* ABORDAGEM espaçado */
-.let-abordagem {
-  font-size: 7px;
-  letter-spacing: 3.5px;
-  color: #333;
-  font-weight: bold;
-  margin: 4px 0 8px;
-}
-
-/* Box laranja (2-Reconhecimento) */
-.let-box-laranja {
-  background: #e67e22;
-  color: #1c1c1c;
-  padding: 7px 8px;
-  border-radius: 3px;
-  flex: 1.05;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-/* Box verde (3-Permite) */
-.let-box-verde {
-  background: #4a7c1f;
+  font-family: var(--fonte-titulos);
+  font-size: 30px;
   color: #fff;
-  padding: 7px 8px;
-  border-radius: 3px;
-  flex: 1;
-  margin-top: 7px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+}
+
+.let-titulo2 {
+  font-family: var(--fonte-titulos);
+  font-size: 30px;
+  color: #f39419;
+}
+
+.let-abordagem {
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin: 8px 0 12px;
+  color: #fff;
+}
+
+/* BOX LARANJA */
+.let-box-laranja {
+  background: #f39419;
+  color: #000;
+  padding: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
 }
 
 .let-box-num {
-  font-size: 8px;
-  color: rgba(0,0,0,0.35);
-  line-height: 1.2;
+  font-size: 12px;
+  font-weight: bold;
 }
-.let-box-verde .let-box-num { color: rgba(255,255,255,0.35); }
 
 .let-box-rotulo {
-  font-size: 8px;
+  font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  margin-bottom: 6px;
   padding-bottom: 3px;
-  margin-bottom: 5px;
 }
-.let-box-verde .let-box-rotulo { border-bottom: 1px solid rgba(255,255,255,0.25); }
 
-.let-box-laranja ul,
+.let-box-laranja ul {
+  font-size: 12px;
+  line-height: 1.6;
+  padding-left: 18px;
+}
+
+/* BOX VERDE */
+.let-box-verde {
+  background: #2e7d32;
+  color: #ffffff;
+  padding: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100%;
+}
+
+.let-box-verde .let-box-rotulo {
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
 .let-box-verde ul {
-  margin: 0;
-  padding-left: 13px;
-  font-size: 6.8px;
-  line-height: 1.65;
-  flex: 1;
+  font-size: 12px;
+  line-height: 1.6;
+  padding-left: 18px;
 }
-
-.let-box-laranja li,
-.let-box-verde li { margin-bottom: 1px; }
 
 /* discurso-poder */
 .discurso-poder {
@@ -621,6 +599,8 @@ body {
   font-size: 28px;
   color: #4a1010;
   line-height: 1.0;
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
 /* Título linha 2: y=82 */
@@ -632,6 +612,8 @@ body {
   font-size: 28px;
   color: #e67e22;
   line-height: 1.0;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 /* Parágrafo 1: y=144 */
@@ -640,11 +622,13 @@ body {
   top: 144px;
   left: 16px;
   right: 16px;
-  font-size: 8px;
+  font-size: 12px;
   color: #222;
   margin: 0;
   text-align: justify;
   line-height: 1.6;
+  width: 350px;
+  margin-left: 20px;
 }
 
 /* Parágrafo 2: y=209 */
@@ -653,43 +637,49 @@ body {
   top: 209px;
   left: 16px;
   right: 16px;
-  font-size: 8px;
+  font-size: 12px;
   color: #222;
   margin: 0;
   text-align: justify;
   line-height: 1.6;
+   width: 350px;
+  margin-left: 20px;
 }
 
 /* Caixa central: y=267, h=82 */
 .dp-caixa {
   position: absolute;
-  top: 267px;
-  left: 16px;
+  top: 270px;
+  left: 80px;
   right: 16px;
-  height: 82px;
+  height: 70px;
   background: #4a1010;
   color: #fff;
-  border-radius: 35px;
-  border: 3px solid #c8851a;
+  box-shadow: 11px 8px #e67e22;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
+  width: 250px;
   box-sizing: border-box;
 }
 
 .dp-caixa-titulo {
-  font-size: 8px;
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 6px;
+  font-family: var(--fonte-titulos);
+  color: #e67e22;
 }
 
 .dp-caixa-texto {
-  font-size: 9.5px;
+  font-size: 12px;
   line-height: 1.4;
+  font-family: arial;
+  width: 200px;
 }
 
 .dp-ou {
@@ -719,6 +709,8 @@ body {
   font-size: 11px;
   color: #e67e22;
   margin-bottom: 6px;
+  font-size: 12px;
+  margin-left: 50px;
 }
 
 .dp-col-esq ul,
@@ -726,10 +718,12 @@ body {
   padding-left: 13px;
   margin: 0;
   line-height: 1.75;
+  margin-left: 50px;
+  font-size: 12px;
 }
 
 .dp-col-esq li,
-.dp-col-dir li { color: #222; margin-bottom: 1px; }
+.dp-col-dir li { color: #222; margin-bottom: 1px;  margin-left: 5px; }
 
 
 /* glossario */
@@ -742,30 +736,35 @@ body {
 
 /* Título: y=37 */
 .glos-titulo {
-  position: absolute;
-  top: 37px;
-  left: 16px;
-  font-family: "Permanent Marker", cursive;
+  font-family: var(--fonte-titulos);
   font-size: 26px;
   color: #4a1010;
+  margin: 50px 0 20px 30px;
 }
 
 /* Grid: top=82, bottom=25 (borda inferior) */
 .glos-grid {
-  position: absolute;
-  top: 82px;
-  left: 14px;
-  right: 14px;
-  bottom: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9px 16px;
-  align-content: start;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 30px 10px 30px;
+  gap: 10px 10px;
 }
 
 .glos-item {
-  font-size: 6.8px;
-  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.glos-item h2{
+  font-size: 12px;
+}
+
+.glos-item p{
+  color: black;
+  font-family: var(--fonte-paragrafos);
+  font-size: 10px;
 }
 
 .glos-item-full {
@@ -786,116 +785,122 @@ body {
   color: #1a1a1a;
 }
 
-/* representatividade */
+/* ===== REPRESENTATIVIDADE IMPORTA ===== */
+
 .representatividade {
   background-image: url("../img-fundo/representatividade.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* Topo: h=242px */
+/* Bloco Superior: Texto Escuro e Grafismo */
 .rep-topo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 242px;
   display: flex;
+  height: 220px; /* Ajuste para equilibrar com o título central */
 }
 
-/* Texto escuro esquerda: w=226px */
 .rep-topo-texto {
-  width: 226px;
-  background: #181818;
-  color: #fff;
-  padding: 14px 12px;
-  font-size: 7px;
+  width: 60%;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.rep-topo-texto p {
+  font-family: var(--fonte-paragrafos);
+  font-size: 11px;
   line-height: 1.6;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
+  text-align: justify;
+  margin: 0;
 }
 
-.rep-topo-texto p { margin: 0; text-align: justify; }
-
-/* Imagem geométrica direita */
+/* Elemento Geométrico no Topo Direita */
 .rep-topo-geo {
-  flex: 1;
-  background-image: url("../img-fundo/representatividade.png");
+  width: 70%;
+  background-color: #f39419;
+  background-image: url("../img-fundo/padrao-etnico.png"); 
   background-size: cover;
-  background-position: top right;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%); /* Cria o corte diagonal sutil */
 }
 
-/* Faixa vermelha: top=242, h=90 */
+/* Faixa Central de Título */
 .rep-faixa {
-  position: absolute;
-  top: 242px;
-  left: 0;
-  right: 0;
-  height: 90px;
-  background: #5a0a0a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #4a1010;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 4px solid #1c1c1c; /* Faixa decorativa superior */
+  border-bottom: 4px solid #1c1c1c; /* Faixa decorativa inferior */
 }
 
 .rep-faixa-titulo {
-  font-family: "Permanent Marker", cursive;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.1;
-  letter-spacing: 0.5px;
+  font-family: var(--fonte-titulos);
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
 }
 
 .rep-faixa-sub {
-  font-family: "Permanent Marker", cursive;
-  font-size: 16px;
-  color: #e67e22;
-  line-height: 1.1;
+  font-family: var(--fonte-titulos);
+  font-size: 40px;
+  color: #f39419; /* Laranja do design */
+  margin: 0;
+  line-height: 1;
 }
 
-/* Base: top=332, até bottom=0 */
+/* Base: Painéis Laranja e Creme */
 .rep-base {
-  position: absolute;
-  top: 332px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
+  flex: 1; /* Ocupa o restante da página */
 }
 
 .rep-base-laranja {
-  background: #d4780a;
-  color: #1a1a1a;
-  padding: 9px 11px;
-  font-size: 6.8px;
-  width: 50%;
-  box-sizing: border-box;
-  line-height: 1.55;
-  overflow: hidden;
+  width: 269px;
+  background-color: #D87700;
+  color: #ffffff;
+  padding: 20px 15px;
 }
 
 .rep-base-creme {
-  background: #fdf5e0;
-  color: #1a1a1a;
-  padding: 9px 11px;
-  font-size: 6.8px;
   width: 50%;
-  box-sizing: border-box;
-  line-height: 1.55;
-  overflow: hidden;
+  background-color: #fdf5e0;
+  color: #4a1010;
+  padding: 20px 15px;
 }
 
-.rep-base-laranja p,
-.rep-base-creme p { margin: 0 0 5px; text-align: justify; }
+.rep-base-laranja p, 
+.rep-base-creme p {
+  font-family: var(--fonte-paragrafos);
+  font-size: 11px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
 
-.rep-base-laranja ul,
-.rep-base-creme ul { padding-left: 13px; margin: 0; line-height: 1.75; }
+.rep-base-laranja ul, 
+.rep-base-creme ul {
+  list-style: none;
+  padding: 0;
+}
 
-.rep-base-laranja li,
-.rep-base-creme li { margin-bottom: 2px; }
+.rep-base-laranja li, 
+.rep-base-creme li {
+  font-family: var(--fonte-paragrafos);
+  font-size: 11px;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+/* Marcadores customizados (bullets) */
+.rep-base-laranja li::before, 
+.rep-base-creme li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: inherit;
+}
 
 /* parte de Eloah */
 /* ===== CULTURA NEGRA ===== */
